@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>JS-Task-8</title>
+</head>
+
+<body>
+  <h2>Javascript Task-8 (Animation Control)</h2>
+  <center><img id="animatedImage" src="https://media.tenor.com/xqIo4KC3TKMAAAAi/mariafuma%C3%A7a.gif"
+      alt="Animated Image"><br><br><br><br>
+
+    <button onclick="startAnimation()">Start</button>&nbsp;&nbsp;
+    <button onclick="stopAnimation()">Stop</button>
+  </center>
+</body>
+
+</html>
+
+<style>
+  #animatedImage {
+    height: 350px;
+    width: 400px;
+    position: relative;
+    animation: move 2s linear infinite;
+  }
+
+  @keyframes move {
+    0% {
+      left: 0;
+    }
+
+    50% {
+      left: 200px;
+    }
+
+    100% {
+      left: 0;
+    }
+  }
+</style>
+
+<script>
+  let animationInterval;
+  let isAnimationRunning = false;
+
+  function startAnimation() {
+    if (!isAnimationRunning) {
+      const image = document.getElementById('animatedImage');
+      image.style.animationPlayState = 'running';
+      animationInterval = setInterval(function () {
+        image.style.animationPlayState = 'running';
+      }, 2000);
+      isAnimationRunning = true;
+    }
+  }
+
+  function stopAnimation() {
+    const image = document.getElementById('animatedImage');
+    clearInterval(animationInterval);
+    image.style.animationPlayState = 'paused';
+    isAnimationRunning = false;
+  }
+</script>

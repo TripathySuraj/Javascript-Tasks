@@ -1,0 +1,54 @@
+.input_style{
+    width: 420px;
+}
+
+select{
+    height: 25px;
+    width: 150px;
+    
+}
+
+form{
+    border:2px solid black; 
+    width: 1000px;
+    height: 1040px;
+}
+
+#form_button{
+    width: 100px;
+    height: 25px;
+    font-weight: bold;
+    color:white;
+    background-color: red;
+    border: 2px solid black;
+    border-radius: 10px;
+}
+
+body{
+    background-color: pink;
+}
+
+h1{
+    color:darkblue;
+}
+
+.label_style{
+   font-weight: bold;
+}
+
+.s_1{
+    text-align: right;
+}
+
+.error{
+    color:red;
+    font-weight: 600;
+}
+
+.declare_style{
+    padding-left: 98px;
+}
+
+.link_row{
+    padding-right: 300px;
+}

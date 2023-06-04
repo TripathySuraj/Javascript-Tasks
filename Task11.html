@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>JS-Task-11</title>
+    <link href="./style_task_11.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+    <h2>Javascript Task-11 (Form validation using Javascript)</h2>
+    <center>
+        <form method="GET" action="" onsubmit="return validateForm();" target="_self">
+            <h1 style="padding-left: 0px;">Registration form</h1>
+            <table cellspacing="15px" align="center" width="1000px">
+                <tr>
+                    <td class="s_1"><label for="firstNameLabel" class="label_style">First Name</label></td>
+                    <td><input type="text" placeholder="Enter first name..." name="firstname" id="firstNameInput" class="input_style" /></td>
+                    <td>
+                        <p class="error" id="first_name_error"></p>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="s_1"><label for="lastNameLabel" class="label_style">Last Name</label></td>
+                    <td><input type="text" placeholder="Enter last name..." name="lastname" id="lastNameInput" class="input_style" /></td>
+                    <td>
+                        <p class="error" id="last_name_error"></p>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="s_1"><label for="emailLabel" class="label_style">Email</label></td>
+                    <td><input type="text" placeholder="Enter email..." name="email" id="emailInput" class="input_style" /></td>
+                    <td>
+                        <p class="error" id="email_error"></p>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="s_1"><label for="passLabel" class="label_style">Password</label></td>
+                    <td><input type="password" placeholder="Set password..." name="pass" id="passInput" class="input_style" /></td>
+                    <td>
+                        <p class="error" id="pass_error"></p>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="s_1"><label for="repassLabel" class="label_style">Re-enter Password</label></td>
+                    <td><input type="password" placeholder="re-enter password..." name="repass" id="repassInput" class="input_style" /></td>
+                    <td>
+                        <p class="error" id="repass_error"></p>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="s_1"><label for="genderLabel" class="label_style">Gender</label></td>
+                    <td id="genderRadio"><input type="radio" name="gender" id="male" value="male">&nbsp;<label
+                            for="maleLabel">Male</label><br />
+                        <input type="radio" name="gender" id="female" value="female"> &nbsp;<label
+                            for="femaleLabel">Female</label>
+                    </td>
+                    <td>
+                        <p class="error" id="gender_error"></p>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="s_1"><label for="ageLabel" class="label_style">Age</label></td>
+                    <td><input type="number" placeholder="Enter your age..." name="age" id="ageInput" class="input_style" /></td>
+                    <td>
+                        <p class="error" id="age_error"></p>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="s_1"><label for="numLabel" class="label_style">Phone Number</label></td>
+                    <td><input type="number" placeholder="Enter your number..." name="num" id="numInput" class="input_style" /></td>
+                    <td>
+                        <p class="error" id="num_error"></p>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="s_1"><label for="addLabel" class="label_style">Address</label><br><br></td>
+                    <td><textarea name="address" placeholder="Enter your address..." id="addressInput" rows="6" cols="56"></textarea>
+                    </td>
+                    <td>
+                        <p class="error" id="address_error"></p>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="s_1"><label for="stateLabel" class="label_style">State</label></td>
+                    <td><input type="text" placeholder="Enter your state..." name="state" id="stateInput" class="input_style" /></td>
+                    <td>
+                        <p class="error" id="state_error"></p>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="s_1"><label for="countryLabel" class="label_style">Country</label></td>
+                    <td>
+                        <select name="country" id="dropInput" class="drop_style">
+                            <option value="select" selected disabled>Choose your country</option>
+                            <option value="india">India</option>
+                            <option value="aus">Australia</option>
+                            <option value="usa">USA</option>
+                            <option value="egypt">Egypt</option>
+                            <option value="argentina">Argentina</option>
+                            <option value="brazil">Brazil</option>
+                        </select><br>
+                    </td>
+                    <!-- <td>
+                        <p id="country_error"></p>
+                    </td> -->
+                </tr>
+                <tr>
+                    <td class="s_1"><label for="languageLabel" class="label_style">Languages known</label></td>
+                    <td><input type="checkbox" id="english" name="english" value="english">
+                        <label for="eng">English</label>&nbsp;&nbsp;
+                        <input type="checkbox" id="kannada" name="kannada" value="kannada">
+                        <label for="knd">Kannada</label>&nbsp;&nbsp;
+                        <input type="checkbox" id="hindi" name="hindi" value="hindi">
+                        <label for="hin">Hindi</label>&nbsp;&nbsp;
+                        <input type="checkbox" id="telugu" name="telugu" value="telugu">
+                        <label for="knd">Telegu</label>
+                    </td>
+                    <td>
+                        <p></p>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2" class="declare_style"><input type="checkbox" id="agree" name="agrrement" value="agreement"><label
+                            for="agr">Hereby I declare all the given details are true.</td>
+                </tr>
+                <tr>
+                    <td colspan="2" class="link_row" style="text-align: right;">
+                        <p>Log in to <a href="https://ethnus.com/">Ethnus</a> website.</p>
+                    </td>
+                </tr> 
+            </table>
+
+            <center><input type="submit" name="register" value="REGISTER" id="form_button" /></center>
+        </form>
+    </center>
+
+</body>
+
+</html>
+
+<script src="Task11.js"></script>

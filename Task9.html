@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>JS-Task-9</title>
+    <link href="./style_task_9.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+    <h2>Javascript Task-9 (Form validation using Javascript)</h2>
+
+    <center><form method="GET" action="" onsubmit="return validateForm();" target="_self">
+        <table cellspacing="15px" align="center">
+            <tr>
+                <td><label for="nameLabel">Name:</label></td>
+                <td><input type="text" placeholder="your name..." name="name" id="nameInput" class="input_style"/></td>
+                <td>
+                    <p id="name_error"></p>
+                </td>
+            </tr>
+            <tr>
+                <td><label for="emailLabel">Email:</label></td>
+                <td><input type="text" placeholder="your email..." name="email" id="emailInput" class="input_style"/></td>
+                <td>
+                    <p id="email_error"></p>
+                </td>
+            </tr>
+            <tr>
+                <td><label for="passLabel">Password:</label></td>
+                <td><input type="password" name="pass" id="passInput" class="input_style"/></td>
+                <td>
+                    <p id="pass_error"></p>
+                </td>
+            </tr>
+            <tr>
+                <td><label for="numLabel">Phone Number :</label></td>
+                <td><input type="number" name="num" id="numInput" placeholder="your phone no..." class="input_style"/></td>
+                <td>
+                    <p id="num_error"></p>
+                </td>
+            </tr>
+            <tr>
+                <td><label for="genderLabel">Gender:</label></td>
+                <td id="genderRadio"><label for="maleLabel">Male:<input type="radio" name="gender" id="male"
+                            value="male"></label>&nbsp;&nbsp;
+                    <label for="femaleLabel">Female:<input type="radio" name="gender" id="female"
+                            value="female"></label>&nbsp;&nbsp;&nbsp;
+                    <label for="otherLabel">Other:<input type="radio" name="gender" id="other"
+                            value="other"></label>
+                </td>
+                <td>
+                    <p id="gender_error"></p>
+                </td>
+            </tr>
+            <tr>
+                <td><label for="languageLabel">Language:</label></td>
+                <td>
+                    <select name="language" id="dropInput" class="drop_style">
+                        <option value="select_language" selected disabled>Select Language</option>
+                        <option value="hindi">Hindi</option>
+                        <option value="english">English</option>
+                        <option value="tamil">Tamil</option>
+                        <option value="bhojpuri">Bhojpuri</option>
+                        <option value="marathi">Marathi</option>
+                        <option value="urdu">Urdu</option>
+                    </select><br>
+                </td>
+                <td>
+                    <p id="language_error"></p>
+                </td>
+            </tr>
+            <tr>
+                <td><label for="zipLabel">Zip Code:</label></td>
+                <td><input type="text" name="zip" id="zipInput" class="input_style"/></td>
+                <td>
+                    <p id="zip_error"></p>
+                </td>
+            </tr>
+            <tr>
+                <td><label for="msgLabel">About:</label><br><br></td>
+                <td><textarea name="msg" id="msgInput" placeholder="Write about yourself..." rows="4"
+                        cols="28"></textarea>
+                </td>
+                <td>
+                    <p id="msg_error"></p>
+                </td>
+            </tr>
+        </table>
+        <br>
+        <center><input type="submit" name="register" value="Register" id="form_button" /></center>
+    </form></center>
+</body>
+
+</html>
+
+<script src="Task9.js"></script>

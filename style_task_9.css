@@ -1,0 +1,37 @@
+.input_style{
+    height: 25px;
+    width: 218px;
+}
+
+select{
+    height: 25px;
+    width: 140px;
+    background-color: gainsboro;
+}
+
+#form_button{
+    height: 35px;
+    width: 375px;
+    font-weight: bold;
+    background-color: white;
+    border: none;
+    border-radius: 3px;
+}
+
+form{
+    background-color: maroon;
+    color: white;
+    height: 630px;
+    padding-top: 20px;
+    padding-left: 70px;
+    padding-right: 90px;
+    width: 640px;
+}
+
+body{
+    background-color: brown;
+}
+
+p{
+    color:yellow;
+}

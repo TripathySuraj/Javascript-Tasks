@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>JS-Task-3</title>
+</head>
+
+<body>
+    <h2>Javascript Task-3 (Form validation using Javascript)</h2>
+
+    <form method="GET" action="" onsubmit="return validateForm();" target="_self">
+        <table cellspacing="15px" align="center">
+            <tr>
+                <td><label for="nameLabel">Name : </label></td>
+                <td><input type="text" placeholder="Enter your full name..." name="name" id="nameInput"/></td>
+                <td><p id="name_error"></p></td>
+            </tr>
+            <tr>
+                <td><label for="emailLabel">Email Address : </label></td>
+                <td><input type="text" placeholder="Enter your email..." name="email" id="emailInput"/></td>
+                <td><p id="email_error"></p></td>
+            </tr>
+            <tr>
+                <td><label for="webLabel">Website : </label></td>
+                <td><input type="text" placeholder="Enter url..." name="web" id="webInput"/></td>
+                <td><p id="web_error"></p></td>
+            </tr>
+            <tr>
+                <td><label for="msgLabel">Message : </label><br><br></td>
+                <td><textarea name="msg" id="msgInput" placeholder="Enter your message..." rows="6"
+                        cols="30"></textarea>
+                </td>
+                <td><p id="msg_error"></p></td>
+            </tr>
+        </table>
+        <br>
+        <center><input type="submit" name="submit" value="Submit" id="formButton"/></center>
+    </form>
+</body>
+
+</html>
+
+<style>
+    tr input{
+        width:220px;
+    }
+</style>
+
+<script src="Task3.js"></script>

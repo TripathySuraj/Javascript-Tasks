@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>JS-Task-7</title>
+</head>
+
+<body>
+    <h2>Javascript Task-7 (Calculator using Javascript)</h2>
+    <form method="GET" action="" target="_self">
+        <table cellspacing="22px" align="center">
+            <tr>
+                <td><label for="number1">1st number :</label></td>
+                <td><input type="number" placeholder="Enter first number..." name="number_1" id="num1" required/></td>
+            </tr>
+            <tr>
+                <td><label for="number2">2nd number :</label></td>
+                <td><input type="number" placeholder="Enter second number..." name="number_2" id="num2" required/></td>
+            </tr>
+        </table><br />
+    </form>
+    <center><input type="submit" name="mul" value="Multiply" onclick="product()" />&nbsp;&nbsp;&nbsp;<input
+        type="submit" name="div" value="Divide" onclick="quotient()" />&nbsp;&nbsp;&nbsp;<input type="submit"
+        name="add" value="Add" onclick="sum()" />&nbsp;&nbsp;&nbsp;<input type="submit" name="sub"
+        value="Subtract" onclick="difference()" /></center>
+    <br /><br /><br />
+    <table cellspacing="22px" align="center">
+        <tr>
+            <td><label for="res">The result is :</label></td>
+            <td><input type="number" placeholder="result is..." name="res" id="result" /></td>
+        </tr>
+    </table>
+    
+</body>
+
+</html>
+
+<style>
+    label {
+        font-weight: bold;
+    }
+</style>
+
+<script src="Task7.js"></script>
